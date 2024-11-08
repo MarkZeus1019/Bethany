@@ -1,0 +1,228 @@
+body {background-color:mistyrose;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+
+h1 {
+    font-size:40px;
+}
+
+@font-face {
+    font-family: WorkSans-Bold;
+    src: url(fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+        font-family: WorkSans-Regular;
+        src: url(fonts/WorkSans-Regular.ttf);
+}
+
+*{box-sizing: border-box;}
+
+h1 {font-size: 40px;
+    color:brown;
+    font-family: WorkSans-Bold;
+    }
+
+h2 { 
+    font-weight: bolder;
+}
+
+#main-header {
+    background-color: #c87d52 ;
+}
+
+nav {
+    height: 80px;
+    width: 1000px;
+    margin: 0px auto 10px;
+}
+
+#main-content {
+
+    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#left-menu {
+    float: left;
+    width: 30%;
+    padding-top: 20px;
+    padding-right: 50px;
+
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+
+#main {
+
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+footer {
+
+    clear: both;
+    width: 100%;
+    background-color: #ffd0c9;
+    padding: 30px;
+}
+
+.menu-logo {
+    width: 175px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+#promo {background-color: brown;
+color:white;
+font-weight:bold;}
+
+a:link {color:blue}
+a:hover{color: purple}
+a:active{color:darkgoldenrod}
+
+.main-content > p {background-color: black;}
+
+
+#promo-header {
+    font-family: WorkSans-Bold;
+    font-variant: small-caps;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding:5px;
+}
+.page-header-small {
+    font-family: WorkSans-Regular;
+    color:black;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size:1.1em;
+    letter-spacing: 0.2rem;
+}
+
+
+.aside-header {
+    text-align: center;
+    font-family: WorkSans-Bold;
+    text-transform: uppercase;
+}
+.small-menu {
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    padding:0px; 
+}
+.small-menu>li>a {
+    font-family: WorkSans-Regular;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color:#c87d52;}
+
+#left-menu>a>img{
+    width:150px;
+    margin:auto;
+    display: block;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+nav>ul>li {
+    float:left;
+
+}
+
+nav>ul>li>a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: WorkSans-Regular;
+}
+
+nav>ul>li>a:hover {
+    color: #ffd0c9;
+}
+
+form {
+    padding:25px;
+}
+
+input[type=text],
+input[type=date],
+input[type=email],
+select, textarea {
+    width: 100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:none;
+    font-family: WorkSans-Regular;
+}
+
+input[type=submit] {
+    background-color: #c87d52;
+    color:black;
+    font-family: WorkSans-Regular;
+    text-transform: uppercase;
+    font-size: large;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+
+}
+
+label {
+    font-family: WorkSans-Regular;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+fieldset {
+    padding:16px;
+    border-radius: 10px;
+    border-color: #c87d52;
+    margin-bottom: 30px;
+}
+
+legend {
+    margin-bottom:0px;
+    margin-left: 16px;
+    font-family: WorkSans-Regular;
+    text-transform: uppercase;
+}

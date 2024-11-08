@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETHANY'S PIE SHOP</title>
+    <meta name="author" content="BETHANY'S PIE SHOP">
+    <meta name="description" content="Store front for BETHANY'S PIE SHOP">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+    <body>
+        <header id="main-header">
+            
+            <nav>
+                <ul>
+                    <li><img src="images/logos/bethany-horizontal-logo.png" class="menu-logo"></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pieoverview.html">PIES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+            <div id="main-content">
+
+                <aside id="left-menu">
+                    <a href="index.html">
+                    <img src="images/logos/bethany-badge-logo.png" width="150px"></a>
+
+                    <p class="aside-header">Browse our pies </p>
+
+                    <ul class="small-menu">
+                        <li> <a href="pieoverview.html">ALL PIES</a></li>
+                        <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                        <li><a href="fruitpies.html">Fruit Pies</a></li>
+                        <li><a href="seasonalpies.html">Seasonal Pies</a></li>
+                        <li><a href="index.html#promos">Promotions</a></li>
+                    </ul>
+
+                    
+       
+                    
+                
+                </aside>
+       
+                <main id="main">
+                    <h1>Contact us!</h1>
+                    <form method="post" action="Contact.html" id="contactForm">
+
+                        <fieldset>
+                            <legend>Your Information</legend> 
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" name="firstname"
+                            placeholder="Enter your first name">
+
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" name="lastname"
+                            placeholder="Enter your last name">
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="netherlands">NetherLands</option>
+                            </select>
+
+                            <label for="birthday">Birthday</label>
+                            <input type="date" id="birthday" name="birthday">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>The Reason you are contacting us</legend>
+                        
+                            <label>I have a</label><br>
+                            <input type="radio" id="question" name="contactReason"
+                            value="Question" checked>
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="remark" name="contactReason"
+                            value="Remark">
+                            <label for="remark">Remark</label><br>
+                            <input type="radio" id="complaint" name="contactReason"
+                            value="Complaint">
+                            <label for="complaint">Complaint</label>
+
+                            <label for="question">Your Question</label>
+                            <textarea id="question" name="question" placeholder="Write your text here" style="height: 150px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </fieldset>
+
+
+                    </form>
+                    
+
+
+                </main>
+
+        </div>
+
+        <footer>
+
+            <small>2023 Bethany's Pie Shop - All rights reserved</small>
+                <p>Our address is
+
+                    <address>
+                    
+                        Bethany's Pie Shop - Bakery Street Brussels Belgium
+
+                 </address> 
+                </p>
+                <p><a href="https://www.pluralsight.com">Created by the developer team at Bethany's Pie shop</a></p>
+
+                <p>Contact us via<a href="mailto:makmakcortel1019@gmail.com"> email</a></p>
+
+
+            </footer>
+        </div>
+        <script>
+            function getData(form) {
+                var formData = new FormData(form);
+                var data = '';
+    
+                for (var pair of formData.entries()) {
+                    data += pair[0] + ": " + pair [1] + "\n";
+                }
+    
+                alert(data);
+    
+            }
+    
+            document.getElementById("contactForm").addEventListener("submit",function (e) {
+                e.preventDefault();
+                getData(e.target);
+            })
+        </script>
+    </body>
+
+</html>
